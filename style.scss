@@ -25,7 +25,7 @@ html {
 }
 
 .hero {
-  min-height: 90vh;
+  min-height: 70vh;
   background-color: $Dark-Blue;
 }
 
@@ -94,6 +94,9 @@ html {
 }
 
 @media screen and (min-width: 600px) {
+  .hero {
+    min-height: 97.2vh;
+  }
   .box {
     width: 600px;
   }
