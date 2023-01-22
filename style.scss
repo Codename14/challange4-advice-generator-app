@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+$Light-Cyan: hsl(193, 38%, 86%);
+$Neon-Green: hsl(150, 100%, 66%);
+$Grayish-Blue: hsl(217, 19%, 38%);
+$Dark-Grayish-Blue: hsl(217, 19%, 24%);
+$Dark-Blue: hsl(218, 23%, 16%);
+$borderRadius: 30px;
+
+html {
+  font-size: 62.5%;
+  color: white;
+  font-family: "Manrope", sans-serif;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  min-height: 90vh;
+  background-color: $Dark-Blue;
+}
+
+.box {
+  position: relative;
+  width: 375px;
+  padding: 4rem;
+  text-align: center;
+  min-height: 375px;
+  background: $Dark-Grayish-Blue;
+  border-radius: $borderRadius;
+}
+
+.advice-title {
+  padding: 1rem;
+  color: $Neon-Green;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+
+.advice-text {
+  font-weight: 500;
+  font-size: 3rem;
+  margin-top: 1.5rem;
+  &::before,
+  &::after {
+    content: "˝";
+  }
+}
+
+.cube {
+  border: none;
+  position: absolute;
+  padding: 2rem;
+  background: $Neon-Green;
+  border-radius: 50%;
+  transform: translate(50%, 50%);
+  bottom: 0;
+  right: 50%;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    border: none;
+    box-shadow: 0px 0px 20px $Neon-Green;
+  }
+  &:active {
+    background: lighten($Neon-Green, 20%);
+  }
+}
+.line {
+  padding: 2.5rem 0;
+}
+
+.attribution {
+  text-align: center;
+  background: $Dark-Blue;
+  padding-bottom: 0.5rem;
+
+  a {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+    color: $Neon-Green;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .box {
+    width: 600px;
+  }
+}
