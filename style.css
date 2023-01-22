@@ -29,7 +29,6 @@ html {
   width: 375px;
   padding: 4rem;
   text-align: center;
-  min-height: 375px;
   background: hsl(217deg, 19%, 24%);
   border-radius: 30px;
 }
